@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playpen Sans", cursive;
+  overflow: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100vw;
+}
+
+#nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 10vw;
+  font-size: 12px;
+}
+
+#nleft {
+  display: flex;
+  gap: 20px;
+}
+
+#nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#nav #centeratag {
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero {
+  width: 100%;
+  height: 100%;
+  margin-top: 15vw;
+  padding: 0vw 10vw;
+}
+
+#sustain {
+  width: 15vw;
+}
+
+#sustain p {
+  font-weight: 800;
+  font-size: 12px;
+  margin: 10px 0;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+#sustain #susimagewrapper {
+  width: 100%;
+  height: 13vw;
+}
+
+#susimagewrapper img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
