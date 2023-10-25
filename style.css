@@ -28,6 +28,7 @@ body {
 }
 
 #nav a {
+  display: inline-block;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -80,7 +81,8 @@ body {
 }
 
 #ephemeral #headings {
-  top: -25%;
+  /* font-style: ; */
+  top: -24%;
   left: -20%;
   position: absolute;
 }
@@ -100,7 +102,7 @@ body {
 }
 
 #ephemeral h1 {
-  font-family: "Sedgwick Ave Display", cursive;
+  /* font-family: "Sedgwick Ave Display", cursive; */
   letter-spacing: 0.2px;
   font-size: 5vw;
   font-weight: 10;
@@ -182,4 +184,146 @@ body {
   background-image: url(Images/grass.jpg);
   background-size: cover;
   background-position: 0% 50%;
+}
+
+#pictures {
+  display: flex;
+  padding: 3vw;
+  padding-left: 14vw;
+  padding-right: 12vw;
+  justify-content: space-between;
+}
+
+#firstpic {
+  width: 17vw;
+}
+
+#firstpic #picimg {
+  width: 15vw;
+  height: 22vw;
+  margin-bottom: 1vw;
+}
+
+#picimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#firstpic h1,
+#secpic h1 {
+  letter-spacing: -0.1vw;
+  font-weight: 100;
+}
+
+#firstpic p,
+#secpic p {
+  opacity: 0.8;
+  font-size: 1vw;
+  letter-spacing: -0.07vw;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+#secpic {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 25vw;
+}
+
+#secpic #picimg {
+  width: 19vw;
+  height: 30vw;
+  margin-bottom: 1vw;
+}
+
+#secpic p {
+  width: 50%;
+  height: 37vw;
+}
+
+#banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* margin-top: 5vw; */
+}
+
+#banner #bimg {
+  width: 62%;
+  height: 70vh;
+}
+
+#bimg img {
+  width: 100%;
+  height: 100%;
+  object-position: 0% 70%;
+  object-fit: cover;
+}
+
+#btext {
+  width: 35%;
+  padding: 0 3vw;
+}
+
+#btext h1 {
+  font-size: 2.8vw;
+  font-weight: 100;
+  letter-spacing: -0.1vw;
+}
+
+#btext p {
+  margin-top: 20px;
+  width: 60%;
+  font-size: 1vw;
+}
+
+#future {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+#future video {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
+
+#ftext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  background-color: white;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+}
+
+/* #ftext h1 {
+  mix-blend-mode: difference;
+} */
+
+#ftext button {
+  margin-top: 10px;
+  padding: 0.8vw 1.7vw;
+  font-size: 1vw;
+  letter-spacing: -0.05vw;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #5e5e5e;
+  color: #5e5e5e;
 }
